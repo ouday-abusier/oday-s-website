@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    time after 8 hours less 20 min <br>
+    <script>
+
+
+Date.prototype.addHours = function(h) {
+  this.setTime(this.getTime() + (h*60*60*1000)-(20*60*1000));
+  return this;
+  
+  
+}
+
+document.writeln(new Date().addHours(8))
+    </script>
+
+</body>
+</html>
